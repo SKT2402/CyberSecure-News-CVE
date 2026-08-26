@@ -180,6 +180,9 @@ Fuente.
 Descripción.
 Categoría.
 Enlace a la fuente original.
+
+![Wireframe de la pantalla de inicio](docs/wireframes/inicio.png)
+
 8.2 Consulta de vulnerabilidades CVE
 
 La aplicación contará con una sección para consultar vulnerabilidades identificadas mediante identificadores CVE.
@@ -196,6 +199,8 @@ Información de mitigación.
 
 El objetivo será proporcionar al usuario una explicación comprensible de las vulnerabilidades y no únicamente mostrar el identificador técnico.
 
+![Wireframe de la pantalla de noticias](docs/wireframes/noticias.png)
+
 8.7 Administración del contenido
 
 El administrador tendrá funciones para mantener actualizado el contenido de la aplicación.
@@ -207,3 +212,5 @@ Consultar registros.
 Modificar registros.
 Eliminar registros.
 Administrar categorías.
+
+![Wireframe del panel de administrador](docs/wireframes/administrador.png)
