@@ -139,32 +139,8 @@ La pantalla principal mostrará información destacada y las noticias más recie
 
 ---
 
-# 7. Interfaz de administrador
-┌─────────────────────────────────┐
-│      PANEL DE ADMINISTRADOR      │
-├─────────────────────────────────┤
-│                                 │
-│ [ + Nueva noticia ]             │
-│                                 │
-│ Noticias                        │
-│ ┌─────────────────────────────┐ │
-│ │ Noticia 1                   │ │
-│ │ [Editar]       [Eliminar]  │ │
-│ └─────────────────────────────┘ │
-│                                 │
-│ Vulnerabilidades                │
-│ ┌─────────────────────────────┐ │
-│ │ CVE-XXXX-XXXXX              │ │
-│ │ [Editar]       [Eliminar]  │ │
-│ └─────────────────────────────┘ │
-│                                 │
-│ Categorías                      │
-│ Usuarios                        │
-└─────────────────────────────────┘
 
----
-
-# 8. Funcionalidad
+# 7. Funcionalidad
 
 La aplicación contará con diferentes funcionalidades que serán desarrolladas progresivamente durante el término académico.
 
@@ -181,7 +157,7 @@ Descripción.
 Categoría.
 Enlace a la fuente original.
 
-![Wireframe de la pantalla de inicio](Docs/Wireframes/inicio.png)
+![Wireframe de la pantalla de inicio](Docs/Wireframes/Inicio.png) 
 
 8.2 Consulta de vulnerabilidades CVE
 
@@ -199,7 +175,7 @@ Información de mitigación.
 
 El objetivo será proporcionar al usuario una explicación comprensible de las vulnerabilidades y no únicamente mostrar el identificador técnico.
 
-![Wireframe de la pantalla de noticias](Docs/Wireframes/noticias.png)
+![Wireframe de la pantalla de noticias](Docs/Wireframes/Noticias.png)
 
 8.7 Administración del contenido
 
@@ -213,4 +189,4 @@ Modificar registros.
 Eliminar registros.
 Administrar categorías.
 
-![Wireframe del panel de administrador](Docs/Wireframes/administrador.png)
+![Wireframe del panel de administrador](Docs/Wireframes/Administrador.png)
