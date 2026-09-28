@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,70 +6,77 @@
     android:padding="20dp">
 
     <!-- Título -->
-
     <TextView
-        android:id="@+id/tvTitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/titulo_principal"
+        android:text="@string/titulo_noticias"
         android:textSize="26sp"
         android:textStyle="bold"
         android:gravity="center"
-        android:layout_marginBottom="35dp" />
+        android:layout_marginBottom="25dp" />
 
-    <!-- Subtítulo -->
-
+    <!-- Noticia  -->
     <TextView
+        android:id="@+id/tvNoticia1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/subtitulo_principal"
-        android:textSize="18sp"
+        android:text="@string/noticia_1_titulo"
+        android:textSize="19sp"
         android:textStyle="bold"
-        android:gravity="center"
-        android:layout_marginBottom="35dp" />
-
-    <!-- Descripción -->
+        android:padding="10dp"
+        android:layout_marginBottom="8dp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/descripcion_principal"
-        android:textSize="16sp"
-        android:gravity="center"
-        android:layout_marginBottom="40dp" />
+        android:text="@string/noticia_2_titulo"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:layout_marginBottom="25dp" />
 
-    <!-- Espacio flexible -->
+    <!-- Noticia  -->
+    <TextView
+        android:id="@+id/tvNoticia2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/noticia_1_contenido"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginBottom="8dp" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/noticia_2_contenido"
+        android:textSize="15sp"
+        android:padding="10dp" />
+
+    <!-- Espacio -->
     <Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
 
-    <!-- Noticias -->
-
+    <!-- Navegación -->
     <Button
-        android:id="@+id/btnNoticias"
+        android:id="@+id/btnInicio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/noticias"
+        android:text="@string/inicio"
         android:layout_marginBottom="8dp" />
-
-    <!-- Vulnerabilidades -->
 
     <Button
         android:id="@+id/btnVulnerabilidades"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/vulnerabilidades"
-        android:layout_marginBottom="12dp" />
-
-    <!-- Administrador -->
+        android:layout_marginBottom="8dp" />
 
     <Button
         android:id="@+id/btnAdministrador"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/administrador"
-        android:layout_marginBottom="10dp" />
+        android:text="@string/administrador" />
 
 </LinearLayout>

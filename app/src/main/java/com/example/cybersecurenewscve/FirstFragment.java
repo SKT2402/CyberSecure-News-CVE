@@ -1,5 +1,6 @@
 package com.example.cybersecurenewscve;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,7 +8,6 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.cybersecurenewscve.databinding.FragmentFirstBinding;
 
@@ -17,22 +17,38 @@ public class FirstFragment extends Fragment {
 
     @Override
     public View onCreateView(
-            @NonNull LayoutInflater inflater, ViewGroup container,
+            @NonNull LayoutInflater inflater,
+            ViewGroup container,
             Bundle savedInstanceState
     ) {
-
         binding = FragmentFirstBinding.inflate(inflater, container, false);
         return binding.getRoot();
-
     }
 
-    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
+    @Override
+    public void onViewCreated(
+            @NonNull View view,
+            Bundle savedInstanceState
+    ) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.buttonFirst.setOnClickListener(v ->
-                NavHostFragment.findNavController(FirstFragment.this)
-                        .navigate(R.id.action_FirstFragment_to_SecondFragment)
-        );
+        // Noticias
+        binding.btnNoticias.setOnClickListener(v -> {
+            Intent intent = new Intent(requireContext(), NoticiasActivity.class);
+            startActivity(intent);
+        });
+
+        // Vulnerabilidades
+        binding.btnVulnerabilidades.setOnClickListener(v -> {
+            Intent intent = new Intent(requireContext(), VulnerabilidadesActivity.class);
+            startActivity(intent);
+        });
+
+        // Administrador
+        binding.btnAdministrador.setOnClickListener(v -> {
+            Intent intent = new Intent(requireContext(), AdminActivity.class);
+            startActivity(intent);
+        });
     }
 
     @Override
@@ -40,5 +56,4 @@ public class FirstFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
-
 }

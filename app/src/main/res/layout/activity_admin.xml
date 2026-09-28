@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/panel_administrador"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="30dp" />
+
+    <EditText
+        android:id="@+id/etTituloNoticia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/titulo_noticia"
+        android:inputType="text"
+        android:importantForAutofill="no"
+        android:layout_marginBottom="15dp" />
+
+    <EditText
+        android:id="@+id/etContenidoNoticia"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="@string/contenido_noticia"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:importantForAutofill="no"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnAgregarNoticia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/agregar_noticia"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnEditarNoticia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/editar_noticia" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnInicioAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/inicio"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnNoticiasAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/noticias"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnVulnerabilidadesAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/vulnerabilidades" />
+
+</LinearLayout>
