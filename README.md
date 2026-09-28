@@ -117,76 +117,105 @@ Entre sus funciones estarán:
 
 # 6. Interfaz de usuario
 
-La interfaz de usuario estará diseñada buscando mantener una estructura sencilla, clara y fácil de navegar.
+La aplicación actualmente cuenta con cuatro pantallas principales.
 
-La aplicación contará con una pantalla principal desde la cual el usuario podrá acceder a las diferentes secciones.
+## 6.1 Pantalla de Inicio
 
-### Secciones principales
+La pantalla de inicio presenta el nombre de la aplicación y una breve descripción de su propósito.
 
-- Inicio
+También proporciona acceso a las principales secciones de la aplicación:
+
 - Noticias
-- Vulnerabilidades CVE
-- Amenazas
-- Recursos educativos
+- Vulnerabilidades
+- Administrador
 
+### Funcionalidad actual
 
-
-La navegación se diseñará de manera que el usuario pueda acceder rápidamente a las funciones principales sin tener que recorrer múltiples pantallas.
-
-### Pantalla de inicio
-
-La pantalla principal mostrará información destacada y las noticias más recientes.
+Los tres botones permiten navegar hacia sus respectivas pantallas.
 
 ---
 
+## 7.2 Pantalla de Noticias
 
-# 7. Funcionalidad
+La pantalla de Noticias está destinada a mostrar información relacionada con acontecimientos y novedades de ciberseguridad.
 
-La aplicación contará con diferentes funcionalidades que serán desarrolladas progresivamente durante el término académico.
+Actualmente contiene información de ejemplo para representar la estructura que tendrá la sección.
 
-8.1 Consulta de noticias
+La navegación inferior permite acceder a:
 
-Los usuarios podrán consultar noticias relacionadas con ciberseguridad.
+- Inicio
+- Vulnerabilidades
+- Administrador
 
-Cada noticia podrá mostrar información como:
+### Funcionalidad futura
 
-Título.
-Fecha de publicación.
-Fuente.
-Descripción.
-Categoría.
-Enlace a la fuente original.
+En futuras versiones se incorporarán noticias reales de ciberseguridad, así como análisis previamente elaborados sobre diferentes acontecimientos, vulnerabilidades y amenazas.
 
-![Wireframe de la pantalla de inicio](Docs/Wireframes/Inicio.png) 
+---
 
-8.2 Consulta de vulnerabilidades CVE
+## 7.3 Pantalla de Vulnerabilidades
 
-La aplicación contará con una sección para consultar vulnerabilidades identificadas mediante identificadores CVE.
+La sección de Vulnerabilidades está destinada a presentar información relacionada con vulnerabilidades identificadas mediante identificadores CVE.
 
-La información podrá incluir:
+Actualmente se utilizan datos de ejemplo para representar la estructura visual de la sección.
 
-Identificador CVE.
-Descripción.
-Severidad.
-Producto afectado.
-Versiones afectadas.
-Impacto.
-Información de mitigación.
+La navegación permite acceder a:
 
-El objetivo será proporcionar al usuario una explicación comprensible de las vulnerabilidades y no únicamente mostrar el identificador técnico.
+- Inicio
+- Noticias
+- Administrador
 
-![Wireframe de la pantalla de noticias](Docs/Wireframes/Noticias.png)
+### Funcionalidad futura
 
-8.7 Administración del contenido
+Esta sección podrá ampliarse para mostrar información más detallada de las vulnerabilidades, incluyendo:
 
-El administrador tendrá funciones para mantener actualizado el contenido de la aplicación.
+- Identificador CVE.
+- Descripción.
+- Nivel de severidad.
+- Sistemas o productos afectados.
+- Información sobre la vulnerabilidad.
+- Análisis realizado.
 
-Entre las operaciones principales se contemplan:
+---
 
-Crear registros.
-Consultar registros.
-Modificar registros.
-Eliminar registros.
-Administrar categorías.
+## 7.4 Pantalla de Administrador
 
-![Wireframe del panel de administrador](Docs/Wireframes/Administrador.png)
+La pantalla de Administrador permite representar las funciones necesarias para la gestión de noticias.
+
+Actualmente contiene:
+
+- Campo para el título de la noticia.
+- Campo para el contenido de la noticia.
+- Botón para agregar una noticia.
+- Botón para editar una noticia.
+
+También cuenta con navegación hacia:
+
+- Inicio
+- Noticias
+- Vulnerabilidades
+
+### Funcionalidad futura
+
+Las funciones de agregar y editar noticias serán conectadas posteriormente con una base de datos para permitir el almacenamiento permanente de la información.
+
+---
+
+# 8. Navegación de la aplicación
+
+La aplicación cuenta actualmente con navegación funcional entre las cuatro pantallas principales.
+
+                    ┌──────────────┐
+                    │    INICIO    │
+                    └──────┬───────┘
+                           │
+          ┌────────────────┼────────────────┐
+          ↓                ↓                ↓
+     ┌──────────┐   ┌───────────────┐   ┌──────────────┐
+     │ NOTICIAS │   │VULNERABILIDADES│   │ADMINISTRADOR │
+     └────┬─────┘   └───────┬───────┘   └──────┬───────┘
+          │                 │                  │
+          └─────────────────┼──────────────────┘
+                            ↓
+                         INICIO
+
