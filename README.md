@@ -135,7 +135,7 @@ Los tres botones permiten navegar hacia sus respectivas pantallas.
 
 ---
 
-## 7.2 Pantalla de Noticias
+## 6.2 Pantalla de Noticias
 
 La pantalla de Noticias está destinada a mostrar información relacionada con acontecimientos y novedades de ciberseguridad.
 
@@ -153,7 +153,7 @@ En futuras versiones se incorporarán noticias reales de ciberseguridad, así co
 
 ---
 
-## 7.3 Pantalla de Vulnerabilidades
+## 6.3 Pantalla de Vulnerabilidades
 
 La sección de Vulnerabilidades está destinada a presentar información relacionada con vulnerabilidades identificadas mediante identificadores CVE.
 
@@ -178,7 +178,7 @@ Esta sección podrá ampliarse para mostrar información más detallada de las v
 
 ---
 
-## 7.4 Pantalla de Administrador
+## 6.4 Pantalla de Administrador
 
 La pantalla de Administrador permite representar las funciones necesarias para la gestión de noticias.
 
@@ -201,7 +201,7 @@ Las funciones de agregar y editar noticias serán conectadas posteriormente con 
 
 ---
 
-# 8. Navegación de la aplicación
+# 7. Navegación de la aplicación
 
 La aplicación cuenta actualmente con navegación funcional entre las cuatro pantallas principales.
 
