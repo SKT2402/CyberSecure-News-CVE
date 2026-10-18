@@ -208,7 +208,7 @@ La aplicación cuenta actualmente con navegación funcional entre las cuatro pan
                             ↓
                          INICIO
                          
-7. Plan de pruebas
+8. Plan de pruebas
 1. Registrar una noticia y comprobar que se conserva al cambiar de
    pantalla.
 2. Registrar un análisis de CVE y comprobar que se conserva.
@@ -219,7 +219,7 @@ La aplicación cuenta actualmente con navegación funcional entre las cuatro pan
 6. Probar la navegación entre Inicio, Noticias, Vulnerabilidades y
    Administrador.
    
-8. Changelog
+9. Changelog
 0.2.0 --- Prototipo de administración
 - Se añadió el formulario para registrar contenido.
 - Se añadió la selección entre noticia y análisis de CVE.
