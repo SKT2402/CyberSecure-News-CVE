@@ -1,6 +1,6 @@
 CyberSecure News & CVE
 
-## Borrador del proyecto
+Repositorio: https://github.com/SKT2402/CyberSecure-News-CVE
 
 **Estudiante:** Ashley Fermín Llano García  
 **Proyecto:** CyberSecure News & CVE  
@@ -165,17 +165,6 @@ La navegación permite acceder a:
 - Noticias
 - Administrador
 
-### Funcionalidad futura
-
-Esta sección podrá ampliarse para mostrar información más detallada de las vulnerabilidades, incluyendo:
-
-- Identificador CVE.
-- Descripción.
-- Nivel de severidad.
-- Sistemas o productos afectados.
-- Información sobre la vulnerabilidad.
-- Análisis realizado.
-
 ---
 
 ## 6.4 Pantalla de Administrador
@@ -218,4 +207,43 @@ La aplicación cuenta actualmente con navegación funcional entre las cuatro pan
           └─────────────────┼──────────────────┘
                             ↓
                          INICIO
-
+                         
+7. Plan de pruebas
+1. Registrar una noticia y comprobar que se conserva al cambiar de
+   pantalla.
+2. Registrar un análisis de CVE y comprobar que se conserva.
+3. Verificar que las noticias no aparezcan en el listado de CVE y
+   viceversa.
+4. Comprobar el comportamiento cuando no existen registros.
+5. Verificar el desplazamiento vertical del formulario y de las listas.
+6. Probar la navegación entre Inicio, Noticias, Vulnerabilidades y
+   Administrador.
+   
+8. Changelog
+0.2.0 --- Prototipo de administración
+- Se añadió el formulario para registrar contenido.
+- Se añadió la selección entre noticia y análisis de CVE.
+- Se agregó almacenamiento local en JSON dentro de
+  SharedPreferences.
+- Se corrigió el desplazamiento vertical del formulario.
+0.1.0 --- Estructura inicial
+- Se creó el proyecto Android.
+- Se establecieron las pantallas principales y la navegación inicial.
+9. Cómo ejecutar
+1. Clonar el repositorio.
+2. Abrir el proyecto en Android Studio.
+3. Esperar a que Gradle termine la sincronización.
+4. Ejecutar la aplicación en un emulador o dispositivo Android.
+10. Limitaciones y trabajo futuro
+La versión actual es un prototipo académico. Los datos se almacenan
+localmente, la edición de registros debe completarse y la integración de
+listas dinámicas con Inicio debe validarse. Una evolución futura podría
+incorporar Room, sincronización con un backend y fuentes verificadas de
+noticias y CVE.
+Referencias
+- GitHub Docs. Hello World.
+  https://docs.github.com/es/get-started/start-your-journey/hello-world
+- Taller Git y GitHub.
+  https://github.com/josejuansanchez/taller-git-github
+- CVE Program. https://www.cve.org/
+- National Vulnerability Database (NVD). https://nvd.nist.gov/
