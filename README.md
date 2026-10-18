@@ -5,9 +5,9 @@ Repositorio: https://github.com/SKT2402/CyberSecure-News-CVE
 **Estudiante:** Ashley Fermín Llano García  
 **Proyecto:** CyberSecure News & CVE  
 **Tipo de aplicación:** Aplicación móvil  
-**Estado:** Borrador del proyecto  
 
----
+
+
 
 ## 1. Descripción del proyecto
 
@@ -19,7 +19,7 @@ La aplicación buscará proporcionar un punto centralizado donde los usuarios pu
 
 Durante el desarrollo del proyecto se buscará implementar una interfaz sencilla e intuitiva que permita navegar entre las diferentes categorías de información.
 
----
+
 
 ## 2. Exposición del problema
 
@@ -45,7 +45,7 @@ La falta de una plataforma móvil centralizada que permita consultar y organizar
 CyberSecure News & CVE buscará solucionar este problema mediante una aplicación móvil que concentre diferentes tipos de información de ciberseguridad en una sola plataforma.
 
 La aplicación permitirá consultar noticias y vulnerabilidades.
----
+
 
 ## 3. Objetivos del proyecto
 
@@ -63,7 +63,7 @@ Desarrollar una aplicación móvil que permita centralizar y consultar informaci
 - Utilizar GitHub para administrar y documentar el proyecto.
 - Desarrollar progresivamente la aplicación durante el término académico.
 
----
+
 
 ## 4. Plataforma
 
@@ -78,7 +78,7 @@ La aplicación será desarrollada inicialmente para dispositivos móviles Androi
 
 Durante las primeras etapas del proyecto se utilizarán datos de prueba para desarrollar y validar la interfaz y las funcionalidades principales. Posteriormente, se evaluará la incorporación de fuentes externas de información y servicios relacionados con vulnerabilidades y noticias de ciberseguridad.
 
----
+
 
 ## 5. Usuarios de la aplicación
 
@@ -113,7 +113,7 @@ Entre sus funciones estarán:
 - Gestionar información relacionada con vulnerabilidades.
 - Administrar usuarios cuando sea necesario.
 
----
+
 
 # 6. Interfaz de usuario
 
@@ -133,7 +133,6 @@ También proporciona acceso a las principales secciones de la aplicación:
 
 Los tres botones permiten navegar hacia sus respectivas pantallas.
 
----
 
 ## 6.2 Pantalla de Noticias
 
@@ -147,11 +146,7 @@ La navegación inferior permite acceder a:
 - Vulnerabilidades
 - Administrador
 
-### Funcionalidad futura
 
-En futuras versiones se incorporarán noticias reales de ciberseguridad, así como análisis previamente elaborados sobre diferentes acontecimientos, vulnerabilidades y amenazas.
-
----
 
 ## 6.3 Pantalla de Vulnerabilidades
 
@@ -165,7 +160,7 @@ La navegación permite acceder a:
 - Noticias
 - Administrador
 
----
+
 
 ## 6.4 Pantalla de Administrador
 
@@ -188,7 +183,7 @@ También cuenta con navegación hacia:
 
 Las funciones de agregar y editar noticias serán conectadas posteriormente con una base de datos para permitir el almacenamiento permanente de la información.
 
----
+
 
 # 7. Navegación de la aplicación
 
