@@ -1,13 +1,13 @@
 CyberSecure News & CVE
 
-## Borrador del proyecto
+Repositorio: https://github.com/SKT2402/CyberSecure-News-CVE
 
 **Estudiante:** Ashley Fermín Llano García  
 **Proyecto:** CyberSecure News & CVE  
 **Tipo de aplicación:** Aplicación móvil  
-**Estado:** Borrador del proyecto  
 
----
+
+
 
 ## 1. Descripción del proyecto
 
@@ -19,7 +19,7 @@ La aplicación buscará proporcionar un punto centralizado donde los usuarios pu
 
 Durante el desarrollo del proyecto se buscará implementar una interfaz sencilla e intuitiva que permita navegar entre las diferentes categorías de información.
 
----
+
 
 ## 2. Exposición del problema
 
@@ -45,7 +45,7 @@ La falta de una plataforma móvil centralizada que permita consultar y organizar
 CyberSecure News & CVE buscará solucionar este problema mediante una aplicación móvil que concentre diferentes tipos de información de ciberseguridad en una sola plataforma.
 
 La aplicación permitirá consultar noticias y vulnerabilidades.
----
+
 
 ## 3. Objetivos del proyecto
 
@@ -63,7 +63,7 @@ Desarrollar una aplicación móvil que permita centralizar y consultar informaci
 - Utilizar GitHub para administrar y documentar el proyecto.
 - Desarrollar progresivamente la aplicación durante el término académico.
 
----
+
 
 ## 4. Plataforma
 
@@ -78,7 +78,7 @@ La aplicación será desarrollada inicialmente para dispositivos móviles Androi
 
 Durante las primeras etapas del proyecto se utilizarán datos de prueba para desarrollar y validar la interfaz y las funcionalidades principales. Posteriormente, se evaluará la incorporación de fuentes externas de información y servicios relacionados con vulnerabilidades y noticias de ciberseguridad.
 
----
+
 
 ## 5. Usuarios de la aplicación
 
@@ -113,80 +113,132 @@ Entre sus funciones estarán:
 - Gestionar información relacionada con vulnerabilidades.
 - Administrar usuarios cuando sea necesario.
 
----
+
 
 # 6. Interfaz de usuario
 
-La interfaz de usuario estará diseñada buscando mantener una estructura sencilla, clara y fácil de navegar.
+La aplicación actualmente cuenta con cuatro pantallas principales.
 
-La aplicación contará con una pantalla principal desde la cual el usuario podrá acceder a las diferentes secciones.
+## 6.1 Pantalla de Inicio
 
-### Secciones principales
+La pantalla de inicio presenta el nombre de la aplicación y una breve descripción de su propósito.
+
+También proporciona acceso a las principales secciones de la aplicación:
+
+- Noticias
+- Vulnerabilidades
+- Administrador
+
+### Funcionalidad actual
+
+Los tres botones permiten navegar hacia sus respectivas pantallas.
+
+
+## 6.2 Pantalla de Noticias
+
+La pantalla de Noticias está destinada a mostrar información relacionada con acontecimientos y novedades de ciberseguridad.
+
+Actualmente contiene información de ejemplo para representar la estructura que tendrá la sección.
+
+La navegación inferior permite acceder a:
+
+- Inicio
+- Vulnerabilidades
+- Administrador
+
+
+
+## 6.3 Pantalla de Vulnerabilidades
+
+La sección de Vulnerabilidades está destinada a presentar información relacionada con vulnerabilidades identificadas mediante identificadores CVE.
+
+Actualmente se utilizan datos de ejemplo para representar la estructura visual de la sección.
+
+La navegación permite acceder a:
 
 - Inicio
 - Noticias
-- Vulnerabilidades CVE
-- Amenazas
-- Recursos educativos
+- Administrador
 
 
 
-La navegación se diseñará de manera que el usuario pueda acceder rápidamente a las funciones principales sin tener que recorrer múltiples pantallas.
+## 6.4 Pantalla de Administrador
 
-### Pantalla de inicio
+La pantalla de Administrador permite representar las funciones necesarias para la gestión de noticias.
 
-La pantalla principal mostrará información destacada y las noticias más recientes.
+Actualmente contiene:
 
----
+- Campo para el título de la noticia.
+- Campo para el contenido de la noticia.
+- Botón para agregar una noticia.
+- Botón para editar una noticia.
+
+También cuenta con navegación hacia:
+
+- Inicio
+- Noticias
+- Vulnerabilidades
+
+### Funcionalidad futura
+
+Las funciones de agregar y editar noticias serán conectadas posteriormente con una base de datos para permitir el almacenamiento permanente de la información.
 
 
-# 7. Funcionalidad
 
-La aplicación contará con diferentes funcionalidades que serán desarrolladas progresivamente durante el término académico.
+# 7. Navegación de la aplicación
 
-8.1 Consulta de noticias
+La aplicación cuenta actualmente con navegación funcional entre las cuatro pantallas principales.
 
-Los usuarios podrán consultar noticias relacionadas con ciberseguridad.
-
-Cada noticia podrá mostrar información como:
-
-Título.
-Fecha de publicación.
-Fuente.
-Descripción.
-Categoría.
-Enlace a la fuente original.
-
-![Wireframe de la pantalla de inicio](Docs/Wireframes/Inicio.png) 
-
-8.2 Consulta de vulnerabilidades CVE
-
-La aplicación contará con una sección para consultar vulnerabilidades identificadas mediante identificadores CVE.
-
-La información podrá incluir:
-
-Identificador CVE.
-Descripción.
-Severidad.
-Producto afectado.
-Versiones afectadas.
-Impacto.
-Información de mitigación.
-
-El objetivo será proporcionar al usuario una explicación comprensible de las vulnerabilidades y no únicamente mostrar el identificador técnico.
-
-![Wireframe de la pantalla de noticias](Docs/Wireframes/Noticias.png)
-
-8.7 Administración del contenido
-
-El administrador tendrá funciones para mantener actualizado el contenido de la aplicación.
-
-Entre las operaciones principales se contemplan:
-
-Crear registros.
-Consultar registros.
-Modificar registros.
-Eliminar registros.
-Administrar categorías.
-
-![Wireframe del panel de administrador](Docs/Wireframes/Administrador.png)
+                    ┌──────────────┐
+                    │    INICIO    │
+                    └──────┬───────┘
+                           │
+          ┌────────────────┼────────────────┐
+          ↓                ↓                ↓
+     ┌──────────┐   ┌───────────────┐   ┌──────────────┐
+     │ NOTICIAS │   │VULNERABILIDADES│   │ADMINISTRADOR │
+     └────┬─────┘   └───────┬───────┘   └──────┬───────┘
+          │                 │                  │
+          └─────────────────┼──────────────────┘
+                            ↓
+                         INICIO
+                         
+8. Plan de pruebas
+1. Registrar una noticia y comprobar que se conserva al cambiar de
+   pantalla.
+2. Registrar un análisis de CVE y comprobar que se conserva.
+3. Verificar que las noticias no aparezcan en el listado de CVE y
+   viceversa.
+4. Comprobar el comportamiento cuando no existen registros.
+5. Verificar el desplazamiento vertical del formulario y de las listas.
+6. Probar la navegación entre Inicio, Noticias, Vulnerabilidades y
+   Administrador.
+   
+9. Changelog
+0.2.0 --- Prototipo de administración
+- Se añadió el formulario para registrar contenido.
+- Se añadió la selección entre noticia y análisis de CVE.
+- Se agregó almacenamiento local en JSON dentro de
+  SharedPreferences.
+- Se corrigió el desplazamiento vertical del formulario.
+0.1.0 --- Estructura inicial
+- Se creó el proyecto Android.
+- Se establecieron las pantallas principales y la navegación inicial.
+9. Cómo ejecutar
+1. Clonar el repositorio.
+2. Abrir el proyecto en Android Studio.
+3. Esperar a que Gradle termine la sincronización.
+4. Ejecutar la aplicación en un emulador o dispositivo Android.
+10. Limitaciones y trabajo futuro
+La versión actual es un prototipo académico. Los datos se almacenan
+localmente, la edición de registros debe completarse y la integración de
+listas dinámicas con Inicio debe validarse. Una evolución futura podría
+incorporar Room, sincronización con un backend y fuentes verificadas de
+noticias y CVE.
+Referencias
+- GitHub Docs. Hello World.
+  https://docs.github.com/es/get-started/start-your-journey/hello-world
+- Taller Git y GitHub.
+  https://github.com/josejuansanchez/taller-git-github
+- CVE Program. https://www.cve.org/
+- National Vulnerability Database (NVD). https://nvd.nist.gov/
