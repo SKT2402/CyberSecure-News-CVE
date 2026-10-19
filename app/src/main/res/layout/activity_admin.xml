@@ -1,75 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="20dp">
+    android:layout_height="match_parent">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/panel_administrador"
-        android:textSize="26sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_marginBottom="30dp" />
+        android:orientation="vertical"
+        android:padding="20dp">
 
-    <EditText
-        android:id="@+id/etTituloNoticia"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/titulo_noticia"
-        android:inputType="text"
-        android:importantForAutofill="no"
-        android:layout_marginBottom="15dp" />
+        <!-- Título de la pantalla -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/panel_administrador"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="25dp" />
 
-    <EditText
-        android:id="@+id/etContenidoNoticia"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:hint="@string/contenido_noticia"
-        android:gravity="top"
-        android:inputType="textMultiLine"
-        android:importantForAutofill="no"
-        android:layout_marginBottom="20dp" />
+        <!-- Tipo de contenido -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo de contenido"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
 
-    <Button
-        android:id="@+id/btnAgregarNoticia"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/agregar_noticia"
-        android:layout_marginBottom="12dp" />
+        <Spinner
+            android:id="@+id/spinnerTipoContenido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" />
 
-    <Button
-        android:id="@+id/btnEditarNoticia"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/editar_noticia" />
+        <!-- Título -->
+        <EditText
+            android:id="@+id/etTituloNoticia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/titulo_noticia"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            android:layout_marginBottom="15dp" />
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
+        <!-- Sección principal -->
+        <EditText
+            android:id="@+id/etDescripcionPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:hint="¿Qué ocurrió?"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:importantForAutofill="no"
+            android:layout_marginBottom="15dp" />
 
-    <Button
-        android:id="@+id/btnInicioAdmin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/inicio"
-        android:layout_marginBottom="8dp" />
+        <!-- Impacto -->
+        <EditText
+            android:id="@+id/etImpacto"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:hint="Impacto"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:importantForAutofill="no"
+            android:layout_marginBottom="15dp" />
 
-    <Button
-        android:id="@+id/btnNoticiasAdmin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/noticias"
-        android:layout_marginBottom="8dp" />
+        <!-- Ejemplo práctico -->
+        <EditText
+            android:id="@+id/etEjemploPractico"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:hint="Ejemplo práctico"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:importantForAutofill="no"
+            android:layout_marginBottom="15dp" />
 
-    <Button
-        android:id="@+id/btnVulnerabilidadesAdmin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/vulnerabilidades" />
+        <!-- Mitigación -->
+        <EditText
+            android:id="@+id/etMitigacion"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:hint="Mitigación"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:importantForAutofill="no"
+            android:layout_marginBottom="15dp" />
 
-</LinearLayout>
+        <!-- Opinión del analista -->
+        <EditText
+            android:id="@+id/etOpinionAnalista"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:hint="Opinión como analista"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:importantForAutofill="no"
+            android:layout_marginBottom="15dp" />
+
+        <!-- Referencia -->
+        <EditText
+            android:id="@+id/etReferencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Referencia"
+            android:inputType="textUri"
+            android:importantForAutofill="no"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Botones de contenido -->
+        <Button
+            android:id="@+id/btnAgregarNoticia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar contenido"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnEditarNoticia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Editar contenido"
+            android:layout_marginBottom="25dp" />
+
+        <!-- Navegación -->
+        <Button
+            android:id="@+id/btnInicioAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/inicio"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnNoticiasAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/noticias"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnVulnerabilidadesAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vulnerabilidades" />
+
+    </LinearLayout>
+
+</ScrollView>

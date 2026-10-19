@@ -3,9 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp">
+    android:padding="16dp">
 
-    <!-- Título -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,65 +12,36 @@
         android:textSize="26sp"
         android:textStyle="bold"
         android:gravity="center"
-        android:layout_marginBottom="25dp" />
+        android:layout_marginBottom="12dp" />
 
-    <!-- CVE 1 -->
-    <TextView
-        android:id="@+id/tvCve1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/cve_1"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:padding="10dp"
-        android:layout_marginBottom="8dp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/cve_1_descripcion"
-        android:textSize="15sp"
-        android:padding="10dp"
-        android:layout_marginBottom="25dp" />
-
-    <!-- CVE 2 -->
-    <TextView
-        android:id="@+id/tvCve2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/cve_2"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:padding="10dp"
-        android:layout_marginBottom="8dp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/cve_2_descripcion"
-        android:textSize="15sp"
-        android:padding="10dp" />
-
-    <!-- Espacio -->
-    <Space
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:fillViewport="true">
 
-    <!-- Navegación -->
+        <LinearLayout
+            android:id="@+id/layoutListaVulnerabilidades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp" />
+
+    </ScrollView>
+
     <Button
         android:id="@+id/btnNoticias"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/noticias"
-        android:layout_marginBottom="8dp" />
+        android:layout_marginBottom="6dp" />
 
     <Button
         android:id="@+id/btnInicio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/inicio"
-        android:layout_marginBottom="8dp" />
+        android:layout_marginBottom="6dp" />
 
     <Button
         android:id="@+id/btnAdministrador"

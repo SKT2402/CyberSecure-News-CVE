@@ -3,9 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp">
+    android:padding="16dp">
 
-    <!-- Título -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,65 +12,33 @@
         android:textSize="26sp"
         android:textStyle="bold"
         android:gravity="center"
-        android:layout_marginBottom="25dp" />
+        android:layout_marginBottom="12dp" />
 
-    <!-- Noticia  -->
-    <TextView
-        android:id="@+id/tvNoticia1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/noticia_1_titulo"
-        android:textSize="19sp"
-        android:textStyle="bold"
-        android:padding="10dp"
-        android:layout_marginBottom="8dp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/noticia_2_titulo"
-        android:textSize="15sp"
-        android:padding="10dp"
-        android:layout_marginBottom="25dp" />
-
-    <!-- Noticia  -->
-    <TextView
-        android:id="@+id/tvNoticia2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/noticia_1_contenido"
-        android:textSize="19sp"
-        android:textStyle="bold"
-        android:padding="10dp"
-        android:layout_marginBottom="8dp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/noticia_2_contenido"
-        android:textSize="15sp"
-        android:padding="10dp" />
-
-    <!-- Espacio -->
-    <Space
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:fillViewport="true">
 
-    <!-- Navegación -->
+        <LinearLayout
+            android:id="@+id/layoutListaNoticias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
     <Button
         android:id="@+id/btnInicio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/inicio"
-        android:layout_marginBottom="8dp" />
+        android:text="@string/inicio" />
 
     <Button
         android:id="@+id/btnVulnerabilidades"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/vulnerabilidades"
-        android:layout_marginBottom="8dp" />
+        android:text="@string/vulnerabilidades" />
 
     <Button
         android:id="@+id/btnAdministrador"

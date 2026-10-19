@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp">
-
-    <!-- Título -->
+    android:padding="16dp">
 
     <TextView
         android:id="@+id/tvTitulo"
@@ -16,9 +13,7 @@
         android:textSize="26sp"
         android:textStyle="bold"
         android:gravity="center"
-        android:layout_marginBottom="35dp" />
-
-    <!-- Subtítulo -->
+        android:layout_marginBottom="12dp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -27,50 +22,51 @@
         android:textSize="18sp"
         android:textStyle="bold"
         android:gravity="center"
-        android:layout_marginBottom="35dp" />
-
-    <!-- Descripción -->
+        android:layout_marginBottom="8dp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/descripcion_principal"
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:gravity="center"
-        android:layout_marginBottom="40dp" />
+        android:layout_marginBottom="12dp" />
 
-    <!-- Espacio flexible -->
-
-    <Space
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:fillViewport="true">
 
-    <!-- Noticias -->
+        <LinearLayout
+            android:id="@+id/layoutResumenInicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Noticias y análisis CVE cargados desde Java -->
+
+        </LinearLayout>
+
+    </ScrollView>
 
     <Button
         android:id="@+id/btnNoticias"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/noticias"
-        android:layout_marginBottom="8dp" />
-
-    <!-- Vulnerabilidades -->
+        android:layout_marginTop="8dp" />
 
     <Button
         android:id="@+id/btnVulnerabilidades"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/vulnerabilidades"
-        android:layout_marginBottom="12dp" />
-
-    <!-- Administrador -->
+        android:text="@string/vulnerabilidades" />
 
     <Button
         android:id="@+id/btnAdministrador"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/administrador"
-        android:layout_marginBottom="10dp" />
+        android:text="@string/administrador" />
 
 </LinearLayout>
